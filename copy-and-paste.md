@@ -16,7 +16,7 @@ Copy a single local folder and paste into another local folder that is open in a
 ### COPY-03
 Repeat tests 01 and 02 using a multiple selection of files and folders.
 
-**Expected** The selection is copied to the destination and all items are selected.   The operation can be undone with Ctrl-Z and redone with Ctrl-Shift-Z.
+**Expected** The selection is copied to the destination and all items are selected.   The operation can be undone with Ctrl-Z and redone with Ctrl-Shift-Z. The operation does not slow down exponentially after copying with a large selection.
 
 ### COPY-04
 Repeat tests 01, 02 and 03 using a destination on a remote samba server.
