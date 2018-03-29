@@ -84,3 +84,8 @@ In all views of a folder containing multiple files, in single-click mode, select
 In all views of a folder containing multiple files, in single-click mode, select a contiguous set of files.  Click on the icon of unselected files while holding down the control key.
 
 **Expected:**  Individual files are selected, maintaining the selection of other files.
+
+### SELECT-14
+In all views of a folder containing multiple files, select some files.  Press the up and down arrows while holding down the control key.
+
+**Expected:**  The cursor moves (prelit icon) but the selection does not change.
