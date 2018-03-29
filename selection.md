@@ -64,3 +64,23 @@ In Icon view of a folder containing enough files to fill several rows, starting 
 In Icon view of a folder containing enough files to fill several rows, starting from a position in the middle, press the up and down arrows without modifier.
 
 **Expected:** Starting from the selected item the cursor position moves upwards and downwards, not wrapping at the edges, and only the file under the cursor is selected. The view scrolls as required to keep the selected file in view.  If there is no file item beneath the current cursor position, the cursor does not move down.
+
+### SELECT-12a
+In all views of a folder containing multiple files, in single-click mode, select a contiguous set of files.  Click on the helper emblems of some selected files.
+
+**Expected:**  Individual files are deselected, maintaining the selection of other files.
+
+### SELECT-12b
+In all views of a folder containing multiple files, in single-click mode, select a contiguous set of files.  Click on the helper emblems of some unselected files.
+
+**Expected:**  Individual files are selected, maintaining the selection of other files.
+
+### SELECT-13a
+In all views of a folder containing multiple files, in single-click mode, select a contiguous set of files.  Click on the icon of selected files while holding down the control key.
+
+**Expected:**  Individual files are deselected, maintaining the selection of other files.
+
+### SELECT-13b
+In all views of a folder containing multiple files, in single-click mode, select a contiguous set of files.  Click on the icon of unselected files while holding down the control key.
+
+**Expected:**  Individual files are selected, maintaining the selection of other files.
