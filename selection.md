@@ -48,9 +48,19 @@ In any view, select some files.  Change to a different view.
 ### SELECT-08
 In Icon view, select a file.  Hold down the Shift key and use the Left and Right Arrow keys.
 
-**Expected:** Further files are selected in a linear fashion, completing one row before continuing at the start of the next.
+**Expected:** Further files are selected in a linear fashion, wrapping at the rightmost edge, completing one row before continuing at the start of the next.
 
 ### SELECT-09
 In Icon view, select two adjacent files in a row, while holding the Shift key down.  Continue to hold down the Shift key and use the Up and Down Arrow keys.
 
 **Expected:** Further files are selected in a linear fashion, completing one row before continuing at the start of the next. (Not in a rectangular fashion cf rubberbanding).
+
+### SELECT-10
+In Icon view of a folder containing enough files to fill several rows, starting from a position in the middle, press the right and left arrows without modifier.
+
+**Expected:** Starting from the selected item the cursor position moves in a linear fashion, wrapping at the edges, and only the file under the cursor is selected.
+
+### SELECT-11
+In Icon view of a folder containing enough files to fill several rows, starting from a position in the middle, press the up and down arrows without modifier.
+
+**Expected:** Starting from the selected item the cursor position moves upwards and downwards, not wrapping at the edges, and only the file under the cursor is selected. The view scrolls as required to keep the selected file in view.  If there is no file item beneath the current cursor position, the cursor does not move down.
